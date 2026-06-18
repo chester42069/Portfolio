@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winchester B. Nuñez | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+    <div id="particles-js"></div>
+
+    <div class="parallax-layer orb-1" data-speed="-0.3"></div>
+    <div class="parallax-layer orb-2" data-speed="0.2"></div>
+    <div class="parallax-layer orb-3" data-speed="-0.5"></div>
+    <div class="parallax-layer orb-4" data-speed="0.6"></div>
+    <div class="parallax-layer orb-5" data-speed="-0.1"></div>
+
+    <header class="scroll-animate">
+        <div class="header-content">
+            <div class="parallax-layer profile-wrapper" data-speed="0.5">
+                <img src="my pic.jpg" alt="Winchester B. Nuñez" class="profile-pic">
+            </div>
+            <div class="header-text">
+                <h1 class="parallax-layer" data-speed="0.4">Winchester B. Nuñez</h1>
+                <p id="typewriter-text"></p>
+                <div class="contact-links">
+                    <a href="https://www.facebook.com/isterrific" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:winchesterbnunez@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/winchester-b-nu%C3%B1ez-905929416/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="scroll-animate">
+            <h2 class="decrypt-text" data-value="About Me">About Me</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">
+                A Computer Science graduate skilled in both front-end design and Python-driven backend
+                development. Experienced in building scalable web systems, integrating automated
+                functionalities, and translating complex processes into streamlined user experiences using
+                HTML, CSS, JavaScript, and Python. Ready to leverage a versatile technical skill set to
+                deliver practical solutions and add immediate value to the workplace.            
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 class="scroll-animate decrypt-text" data-value="Technical Proficiencies">Technical Proficiencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal-scale tilt-card" style="transition-delay: 0.1s;">
+                    <h3>Data Science & ML</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>XGBoost & DBSCAN</li>
+                        <li>Getis-Ord Gi* Spatial Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal-scale tilt-card" style="transition-delay: 0.25s;">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML & Modern CSS</li>
+                        <li>Flask Backend Development</li>
+                        <li>Responsive UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="scroll-animate decrypt-text" data-value="Featured Work">Featured Work</h2>
+
+            <div class="project reveal-left tilt-card">
+                <h3>SPATIAL ANALYSIS AND MULTI-SOURCE DATA FUSION FOR DENGUE OUTBREAK FORECASTING USING AN ENSEMBLE OF RANDOM FOREST AND XGBOOST WITH HEATMAP VISUALIZATION</h3>
+                <div class="project-role">Researcher & Geospatial Analyst</div>
+                <p class="project-details">
+                    Engineered a spatial intelligence pipeline by integrating multi-source epidemiological, demographic, and meteorological datasets using PostgreSQL/PostGIS.
+                    Implemented DBSCAN for unsupervised spatial clustering, successfully partitioning 15 distinct zones and isolating anomaly-driven transmission patterns from noise.
+                    Applied Getis-Ord Gi* statistics to conduct hotspot analysis, mapping 148 statistically significant hotspots, 375 coldspots, and 11,957 non-significant zones to provide actionable insights for public health prioritization.
+                    Integrated these spatial outputs as key predictive features into an ensemble machine learning pipeline, which enhanced the model’s ability to capture nonlinear outbreak dynamics.
+                    Developed color-coded heatmap visualizations that translated statistical outputs into an intuitive, geographically targeted decision-support tool for local government stakeholders.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Geospatial Analysis</span>
+                    <span class="tag">DBSCAN</span>
+                    <span class="tag">Machine Learning</span>
+                </div>
+            </div>
+
+            <div class="project reveal-right tilt-card">
+                <h3>Laguna Water District Utility Information System</h3>
+                <div class="project-role">Frontend Developer</div>
+                <p class="project-details">
+                    Designed and developed the modern, responsive front-end architecture for the official Laguna Water District website using HTML, CSS, and JavaScript.
+                    Collaborated with a team to integrate dynamic user-facing features, including an automated customer service chatbot and streamlined informational portals for utility services and payment routing. Ensured cross-browser compatibility and mobile responsiveness, prioritizing a clean, accessible user interface for district consumers.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Chatbot Integration</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="scroll-animate decrypt-text" data-value="Experience & Education">Experience & Education</h2>
+
+            <div class="experience-item reveal-scale" style="transition-delay: 0.25s;">
+                <div class="experience-header">
+                    <h3>Laguna State Polytechnic University - Bachelor of Science in Computer Science</h3>
+                    <span class="experience-date">2022 - 2026</span>
+                </div>
+                <div class="experience-company">Major in Intelligent Systems </div>
+            </div>
+
+            <div class="experience-item reveal-scale" style="transition-delay: 0.1s;">
+                <div class="experience-header">
+                    <h3>On-the-Job Trainee</h3>
+                    <span class="experience-date">2026</span>
+                </div>
+                <div class="experience-company">Laguna Water District</div>
+            </div>
+
+            <div class="experience-item reveal-scale" style="transition-delay: 0.25s;">
+                <div class="experience-header">
+                    <h3>Job Order</h3>
+                    <span class="experience-date">2026</span>
+                </div>
+                <div class="experience-company">Laguna Water District</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="scroll-animate">
+        <p>&copy; 2026 Winchester B. Nunez. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // --- 1. LENIS SMOOTH SCROLLING INIT ---
+        const lenis = new Lenis({
+            duration: 1.2, 
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+            smoothWheel: true
+        });
+
+        // The master animation loop for smooth scrolling
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // --- 2. PARALLAX SCROLL PROGRESS & ORBS ---
+        const parallaxElements = document.querySelectorAll('.parallax-layer');
+
+        // Hook parallax math directly into Lenis for 60fps smoothness
+        lenis.on('scroll', () => {
+            const scrollTop = window.scrollY;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = scrollPercentage + '%';
+
+            parallaxElements.forEach(el => {
+                const speed = el.getAttribute('data-speed');
+                const yPos = -(scrollTop * speed);
+                const scale = 1 + (scrollTop * 0.0003); 
+                el.style.transform = `translateY(${yPos}px) scale(${scale})`;
+            });
+        });
+
+        // --- 3. TYPEWRITER EFFECT ---
+        const text = "Computer Science - Major in Intelligent System | Web Developer";
+        const element = document.getElementById("typewriter-text");
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50); 
+            }
+        }
+        window.onload = typeWriter;
+
+        // --- 4. 3D TILT EFFECT ---
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const { offsetWidth: width, offsetHeight: height } = card;
+                const { offsetX: mouseX, offsetY: mouseY } = e;
+                const rotateX = ((mouseY / height) - 0.5) * -15; 
+                const rotateY = ((mouseX / width) - 0.5) * 15;
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+
+        // --- 5. SAFE SCROLL REVEAL ANIMATIONS ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, { threshold: 0.1 }); 
+
+        const hiddenElements = document.querySelectorAll('.scroll-animate, .reveal-left, .reveal-right, .reveal-scale');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        // --- 6. CRYPTOGRAPHIC DECRYPT ALGORITHM ---
+        const letters = "!@#$%^&*()_+-=[]{}|;':,./<>?";
+        
+        const decryptObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    let iteration = 0;
+                    const target = entry.target;
+                    const finalString = target.dataset.value;
+                    
+                    clearInterval(target.decryptInterval);
+                    
+                    target.decryptInterval = setInterval(() => {
+                        target.innerText = finalString
+                            .split("")
+                            .map((letter, index) => {
+                                if(letter === " ") return " ";
+                                if(index < iteration) return finalString[index];
+                                return letters[Math.floor(Math.random() * letters.length)];
+                            })
+                            .join("");
+                        
+                        if(iteration >= finalString.length) {
+                            clearInterval(target.decryptInterval);
+                            target.innerText = finalString; 
+                        }
+                        
+                        iteration += 1 / 2; 
+                    }, 15); 
+                }
+            });
+        }, { threshold: 1.0 }); 
+
+        document.querySelectorAll('.decrypt-text').forEach(el => decryptObserver.observe(el));
+
+        // --- 7. MONOCHROME NEURAL + BUBBLE PARTICLES ---
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 150, "density": { "enable": true, "value_area": 600 } },
+                "color": { "value": "#ffffff" }, 
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": true }, 
+                "size": { "value": 2, "random": true },
+                "line_linked": { 
+                    "enable": true, 
+                    "distance": 150, 
+                    "color": "#ffffff", 
+                    "opacity": 0.3, 
+                    "width": 1 
+                },
+                "move": { 
+                    "enable": true, 
+                    "speed": 1, 
+                    "direction": "none", 
+                    "random": true, 
+                    "straight": false, 
+                    "out_mode": "out" 
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { 
+                    "onhover": { "enable": true, "mode": ["grab", "bubble"] }, 
+                    "onclick": { "enable": true, "mode": "push" }, 
+                    "resize": true 
+                },
+                "modes": { 
+                    "grab": { "distance": 200, "line_linked": { "opacity": 3 } },
+                    "bubble": { "distance": 150, "size": 10, "duration": 0.3, "opacity": 1 },
+                    "push": { "particles_nb": 8 } 
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
