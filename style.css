@@ -59,7 +59,7 @@ body {
 }
 
 header, main, footer { position: relative; z-index: 1; pointer-events: none; }
-.contact-links a, .project, .skill-card, .profile-wrapper { pointer-events: auto; }
+.contact-links a, .project, .skill-card, .profile-wrapper, .cv-btn { pointer-events: auto; }
 
 main {
     max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; perspective: 1000px; 
@@ -125,9 +125,43 @@ header h1 {
 #typewriter-text::after { content: '|'; animation: blink 1s step-end infinite; color: var(--accent-color); }
 @keyframes blink { 50% { opacity: 0; } }
 
-.contact-links { display: flex; justify-content: flex-start; gap: 1.5rem; margin-top: 1rem; }
-.contact-links a { color: var(--text-muted); font-size: 1.3rem; text-decoration: none; transition: all 0.3s ease; pointer-events: auto; }
+/* --- NEW ACTION BAR & CV BUTTON --- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between icons and the button */
+    margin-top: 1rem;
+}
+
+.contact-links { display: flex; justify-content: flex-start; gap: 1.5rem; }
+.contact-links a { color: var(--text-muted); font-size: 1.3rem; text-decoration: none; transition: all 0.3s ease; }
 .contact-links a:hover { color: var(--accent-color); transform: translateY(-3px); text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: rgba(18, 18, 18, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.cv-btn:hover {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    border-color: var(--text-main);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
 
 section { margin-bottom: 5rem; }
 
@@ -235,6 +269,10 @@ footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top
 @media (max-width: 768px) {
     header h1 { font-size: 2.5rem; }
     .header-content { flex-direction: column; text-align: center; gap: 1.5rem; }
+    
+    /* Center the action bar on mobile */
+    .action-bar { flex-direction: column; gap: 1.5rem; justify-content: center; }
     .contact-links { justify-content: center; }
+    
     .experience-header { flex-direction: column; }
 }
